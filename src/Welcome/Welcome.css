@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Michroma&display=swap');
+
+.welcome {
+    /* background-color: #1f1f1f; */
+    
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.welcome__wrapper {
+    animation: zoom 0.8s ease;
+    
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.5);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../../public/background.png);
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    z-index: -1;
+    filter: blur(2px) brightness(0.5);
+}
+
+.welcome__title {
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 5rem;
+    font-size: 3rem;
+    font-family: Michroma;
+    word-spacing: 0.6em;
+}
+
+.welcome__btnGr {
+    text-align: center;
+}
+
+.welcome__btnGr__btn {
+    text-transform: uppercase;
+    /* margin-left: 30px; */
+    background-color: #f78600;
+    color: #fff;
+    border: 0;
+    box-shadow: #aa620c 5px 3px;
+    min-width: 10rem;
+    min-height: 6rem;
+    cursor: pointer;
+    font-weight: 200;
+    font-size: 1em;
+    display: inline-block;
+}
+
+.welcome__btnGr__btn:active {
+    box-shadow: #aa620c 5px 1px;
+    opacity: 80%;
+    transform: translateY(2%) translateX(2%);
+}
+
+.welcome__btnGr-link + .welcome__btnGr-link {
+    margin-left: 3em;
+}
+
+.welcome__btnGr__btn .icon {
+    margin-top: 20%;
+}
+
+.welcome__btnGr__btn p {
+    font-weight: 500;
+    font-size: larger;
+}
