@@ -20,6 +20,7 @@ function About() {
                             className='about__left__cv-vi btn' 
                             href='https://hoanghai912.github.io/mycv/'
                             target='_blank'
+                            rel="noreferrer"
                         >My CV (Vietnamese)</a>
                         <div className='about__left__cv-en btn'>My CV (English)</div>
 
@@ -31,6 +32,7 @@ function About() {
                             className='about__left__github btn'
                             href='https://github.com/hoanghai912'
                             target='_blank'
+                            rel="noreferrer"
                             style={{display:"block"}}
                         >GitHub</a>
                     </div>
@@ -39,7 +41,7 @@ function About() {
                         <div className='about__right__title'>Hello, I'm Hai</div>
                         <div className='about__right__shortDesc'>A Web developer with strength in front-end</div>
 
-                        <div className='about__right__desc'>
+                        <div className='about__right__desc' align="justify">
                             I'm a front-end developer who still needs to gain more work experience. 
                             However, with enthusiasm and passion for this field, I will constantly learn 
                             and strive to develop myself and pursue my dreams.
